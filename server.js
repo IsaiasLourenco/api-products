@@ -4,7 +4,7 @@ const app = express();
 const { getProducts, getProduct } = require('./controllers/productController');
 
 app.get('/api/products', getProducts);
-app.get('/api/product/:id', getProduct);
+app.get('/api/products/:id', getProduct);
 
 const PORT = process.env.PORT || 5000;
 
